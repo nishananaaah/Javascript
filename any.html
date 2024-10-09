@@ -8,10 +8,10 @@
 <body>
     <script>
         const promise1=new Promise((resolve,reject)=>{
-      reject(["apple","banana"])
+      resolve(["apple","banana"])
 });
 const promise2=new Promise((resolve,reject)=>{
-    resolve("api failed")
+    reject("api failed")
 
 });
 const allpromises=Promise.race([promise1,promise2])

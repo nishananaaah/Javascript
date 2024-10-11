@@ -1,8 +1,9 @@
 function outer(){
     let message="hello";
+    let woord="verygood"
 
     function inner(){
-        console.log(message)
+        console.log(woord)
     }
     inner();
 }
